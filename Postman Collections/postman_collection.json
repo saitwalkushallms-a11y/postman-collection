@@ -310,7 +310,7 @@
 									]
 								},
 								"url": {
-									"raw": "https://apiqa.on24.com/v2/client/{{Client id}}/event/3724381/attendee?startDate=2026-04-02T23:07:04-07:00&endDate=2026-04-02T23:18:00-07:00",
+									"raw": "https://apiqa.on24.com/v2/client/51137/event/3724381/attendee?startDate=2026-04-02T23:07:04-07:00&endDate=2026-04-02T23:18:00-07:00",
 									"protocol": "https",
 									"host": [
 										"apiqa",
@@ -320,7 +320,7 @@
 									"path": [
 										"v2",
 										"client",
-										"{{Client id}}",
+										"51137",
 										"event",
 										"3724381",
 										"attendee"
