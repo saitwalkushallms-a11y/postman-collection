@@ -1806,7 +1806,7 @@
 							"    });\r",
 							"    \r",
 							"pm.test(\"Body matches string\", function () {\r",
-							"pm.expect(pm.response.text()).to.include(\"title\", \"Event 19 no\");\r",
+							"pm.expect(pm.response.text()).to.include(\"title\", \"kushal Webcast Event\");\r",
 							"});\r",
 							"// Parse the response JSON\r",
 							"var jsonData = pm.response.json();\r",
@@ -1816,10 +1816,28 @@
 							"\r",
 							"// Save the eventId as an environment variable\r",
 							"pm.environment.set(\"EventId\", eventId);\r",
+							"\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "3e762d44-2012-46f3-b615-4462ff217752",
+						"exec": [
+							"var random=Math.random().toString(36).substring(2)\r",
+							"\r",
+							"var useremail=\"jim\"+random+\"@inbfw.com\";\r",
+							"var username=\"jim\"+random;"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -1862,7 +1880,7 @@
 						},
 						{
 							"key": "liveStart",
-							"value": "2025-12-30T11:30:00",
+							"value": "2027-12-30T11:30:00",
 							"type": "text"
 						},
 						{
@@ -2009,7 +2027,7 @@
 						}
 					]
 				},
-				"url": "https://apiqa.on24.com/v2/client/51137/event"
+				"url": "{{endpoint_url}}/v2/client/{{Client id}}/event"
 			},
 			"response": []
 		},
