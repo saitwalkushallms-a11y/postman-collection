@@ -1833,7 +1833,10 @@
 							"var random=Math.random().toString(36).substring(2)\r",
 							"\r",
 							"var useremail=\"jim\"+random+\"@inbfw.com\";\r",
-							"var username=\"jim\"+random;"
+							"var username=\"jim\"+random;\r",
+							"\r",
+							"pm.environment.set(\"email_env\",useremail);\r",
+							"pm.environment.set(\"name_env\",name);"
 						],
 						"type": "text/javascript",
 						"packages": {},
